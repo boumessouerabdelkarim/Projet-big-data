@@ -10,7 +10,7 @@ data_frame.printSchema()
 
 data_frame.show(10)
 
-client = MongoClient("mongodb+srv://karim:20714971abdo@abdelelkarim.vbgoppi.mongodb.net/?retryWrites=true&w=majority&appName=AbdelElKarim")
+client = MongoClient("mongodb+srv://url_mongodb")
 db = client["bigData"]
 def create_profiles_collection(db, collection_name, validator=None):
     if collection_name not in db.list_collection_names():
